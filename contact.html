@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - One 21 Teach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>One 21 Teach</h1>
+            <p class="tagline">1-on-1 Personal Tutor</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="single-column">
+            <section class="form-container">
+                <h2>Book a Tutoring Session</h2>
+                <p>Fill out the form below to get started with 1-on-1 tutoring for your child.</p>
+
+                <form action="#" method="post" class="custom-form">
+                    <label for="fullname">Parent's Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+
+                    <label for="grade">Child's Grade Level:</label>
+                    <select id="grade" name="grade" required>
+                        <option value="">-- Choose Grade Level --</option>
+                        <option value="elementary">Elementary (K-5th)</option>
+                        <option value="middle">Middle School (6th-8th)</option>
+                        <option value="high">High School (9th-12th)</option>
+                    </select>
+
+                    <label for="subject">Subject Needed & Notes:</label>
+                    <textarea id="subject" name="subject" rows="5" placeholder="Let us know what subjects (Math, English) your child needs help with..."></textarea>
+
+                    <div class="form-buttons">
+                        <input type="submit" value="Submit Request" class="btn-submit">
+                        <input type="reset" value="Reset Form" class="btn-reset">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 One 21 Teach. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
