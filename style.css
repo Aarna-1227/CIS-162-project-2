@@ -11,14 +11,12 @@ body {
     line-height: 1.6;
 }
 
-/* --- Parent Grid Layout --- */
 .container {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
 
-/* --- Header Styling --- */
 header {
     background-color: #1a365d;
     color: #ffffff;
@@ -41,7 +39,6 @@ header .tagline {
     letter-spacing: 2px;
 }
 
-/* --- Navigation Styling --- */
 nav {
     background-color: #2d3748;
     position: sticky;
@@ -73,7 +70,6 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* --- Main Content Grid Layouts --- */
 main {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
@@ -134,7 +130,6 @@ main.single-column {
     border-left: 4px solid #2b6cb0;
 }
 
-/* Sidebar */
 .info-sidebar {
     background-color: #ebf8ff;
     padding: 30px;
@@ -160,7 +155,6 @@ main.single-column {
     margin-top: 10px;
 }
 
-/* --- Form Styles --- */
 .custom-form {
     margin-top: 20px;
 }
@@ -235,7 +229,6 @@ main.single-column {
     background-color: #cbd5e0;
 }
 
-/* --- W3Schools CSS Image Gallery Styles --- */
 div.gallery {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -274,7 +267,6 @@ div.desc {
     clear: both;
 }
 
-/* --- Footer Styling --- */
 footer {
     background-color: #1a365d;
     color: #ffffff;
@@ -283,7 +275,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- Responsive Layout --- */
 @media only screen and (max-width: 700px) {
     .responsive {
         width: 49.99999%;
