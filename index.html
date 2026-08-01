@@ -1,104 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One 21 Teach - Personal Tutoring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="site-container">
         <header>
             <h1>One 21 Teach</h1>
             <p class="tagline">1-on-1 Personal Tutor</p>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="subjects.html">Subjects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md custom-nav p-0">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler my-2 ms-3 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <main>
-            <section class="hero-block">
-                <h2>Welcome to One 21 Teach</h2>
-                <p>We provide dedicated 1-on-1 tutoring designed to help your child improve their grades in Math and English, building confidence that lasts a lifetime.</p>
-                <div class="cta-container">
-                    <a href="contact.html" class="cta-button">Get Started</a>
+            <div class="row g-4 align-items-center mb-5">
+                <div class="col-lg-7">
+                    <h2 class="fw-bold text-primary mb-3">Welcome to One 21 Teach</h2>
+                    <p class="lead text-secondary">We provide dedicated 1-on-1 tutoring designed to help your child improve their grades in Math and English, building confidence that lasts a lifetime.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg mt-2">Get Started</a>
                 </div>
-                
-                <div class="review-box">
-                    <h3>What Parents Say</h3>
-                    <p class="review">"One 21 Teach completely transformed my child's approach to English. Their grades improved in just a few weeks!"</p>
-                </div>
-            </section>
-            
-            <aside class="info-sidebar">
-                <h3>Our Mission</h3>
-                <p>To help K-12th grade students reach their full academic potential through personalized, focused learning sessions.</p>
-                
-                <hr class="sidebar-divider">
-                
-                <h3>Contact Info</h3>
-                <p>Have questions? Reach out directly to book a session.</p>
-                <p class="contact-details">Email: info@one21teach.com<br>Phone: (555) 123-4567</p>
-            </aside>
-            <section class="my-4">
-    <h2>Frequently Asked Questions</h2>
-    
-    <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-            <h3 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    How are sessions structured?
-                </button>
-            </h3>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Sessions are structured 1-on-1 to focus on specific homework, study skills, and foundational concepts tailored to your child's pace.
+                <div class="col-lg-5">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600" class="img-fluid rounded-3 shadow" alt="Student receiving tutoring">
                 </div>
             </div>
-        </div>
 
-        <div class="accordion-item">
-            <h3 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What grade levels do you teach?
-                </button>
-            </h3>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    We offer tutoring across all K-12 grade levels in core subjects like Math and English.
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="sidebar-box h-100">
+                        <h4 class="fw-bold text-dark mb-2">Our Mission</h4>
+                        <p class="mb-0">To help K-12th grade students reach their full academic potential through personalized, focused learning sessions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sidebar-box h-100">
+                        <h4 class="fw-bold text-dark mb-2">What Parents Say</h4>
+                        <p class="mb-0 fs-6 text-muted"><em>"One 21 Teach completely transformed my child's approach to English. Their grades improved in just a few weeks!"</em></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="accordion-item">
-            <h3 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How do I get started?
-                </button>
-            </h3>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Simply fill out our contact form on the Contact page, and we will reach out to schedule your first trial session.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
         </main>
 
         <footer>
-            <p>&copy; 2026 One 21 Teach. All rights reserved.</p>
+            <p class="mb-0">&copy; 2026 One 21 Teach. All rights reserved.</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
