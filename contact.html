@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - One 21 Teach</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="site-container">
         <header>
             <h1>One 21 Teach</h1>
             <p class="tagline">1-on-1 Personal Tutor</p>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="subjects.html">Subjects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md custom-nav p-0">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler my-2 ms-3 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="subjects.html">Subjects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <main class="single-column">
-            <section class="form-container">
-                <h2>Book a Tutoring Session</h2>
-                <p>Fill out the form below to get started with 1-on-1 tutoring for your child.</p>
+        <main>
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <h2 class="fw-bold text-primary mb-2">Book a Tutoring Session</h2>
+                    <p class="text-muted mb-4">Fill out the form below to get started with 1-on-1 tutoring for your child.</p>
 
-                <form action="#" method="post" class="custom-form">
-                    <label for="fullname">Parent's Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label fw-bold">Parent's Full Name:</label>
+                            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Jane Doe" required>
+                        </div>
 
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="aarnajain1227@gmail.com" required>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email Address:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="aarnajain1227@gmail.com" required>
+                        </div>
 
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(310)-310-1081" required>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label fw-bold">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="(310)-310-1081" required>
+                        </div>
 
-                    <label for="grade">Child's Grade Level:</label>
-                    <select id="grade" name="grade" required>
-                        <option value="">-- Choose Grade Level --</option>
-                        <option value="elementary">Elementary (K-5th)</option>
-                        <option value="middle">Middle School (6th-8th)</option>
-                        <option value="high">High School (9th-12th)</option>
-                    </select>
+                        <div class="mb-3">
+                            <label for="grade" class="form-label fw-bold">Child's Grade Level:</label>
+                            <select class="form-select" id="grade" name="grade" required>
+                                <option value="">-- Choose Grade Level --</option>
+                                <option value="elementary">Elementary (K-5th)</option>
+                                <option value="middle">Middle School (6th-8th)</option>
+                                <option value="high">High School (9th-12th)</option>
+                            </select>
+                        </div>
 
-                    <label for="subject">Subject Needed & Notes:</label>
-                    <textarea id="subject" name="subject" rows="5" placeholder="Let us know what subjects (Math, English) your child needs help with..."></textarea>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label fw-bold">Subject Needed & Notes:</label>
+                            <textarea class="form-control" id="subject" name="subject" rows="4" placeholder="Let us know what subjects (Math, English) your child needs help with..."></textarea>
+                        </div>
 
-                    <div class="form-buttons">
-                        <input type="submit" value="Submit Request" class="btn-submit">
-                        <input type="reset" value="Reset Form" class="btn-reset">
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary px-4 fw-bold">Submit Request</button>
+                            <button type="reset" class="btn btn-outline-secondary px-4">Reset Form</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="sidebar-box h-100">
+                        <h4 class="fw-bold text-dark mb-3">Direct Contact Info</h4>
+                        <p class="text-muted">Have questions? Reach out directly to book a session.</p>
+                        <hr>
+                        <p class="mb-2"><strong>Email:</strong> info@one21teach.com</p>
+                        <p class="mb-4"><strong>Phone:</strong> (555) 123-4567</p>
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600" class="img-fluid rounded-3 shadow-sm mt-2" alt="Student studying">
                     </div>
-                </form>
-            </section>
+                </div>
+            </div>
         </main>
 
         <footer>
-            <p>&copy; 2026 One 21 Teach. All rights reserved.</p>
+            <p class="mb-0">&copy; 2026 One 21 Teach. All rights reserved.</p>
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
