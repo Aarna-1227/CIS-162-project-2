@@ -16,6 +16,7 @@ body {
     overflow: hidden;
     flex: 1;
 }
+
 header {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
     color: #ffffff;
@@ -62,6 +63,11 @@ main {
     border-radius: 8px;
     padding: 1.5rem;
     border-left: 4px solid #2563eb;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
 
 footer {
